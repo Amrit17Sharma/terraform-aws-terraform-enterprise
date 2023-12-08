@@ -1,5 +1,6 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
+# this is a sample test
 
 resource "random_id" "redis_password" {
   count       = var.active_active && var.redis_use_password_auth ? 1 : 0
